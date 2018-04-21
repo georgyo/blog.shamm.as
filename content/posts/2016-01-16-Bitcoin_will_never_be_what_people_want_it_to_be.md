@@ -3,7 +3,7 @@ layout: post
 title: "Bitcoin will never be what people want it to be"
 tagline: "The Bad Parts"
 description: ""
-category: ""
+categories: []
 date: "2016-01-16 8:49:05"
 tags: ["bitcoin", "cryptocurrencies"]
 ---
@@ -27,6 +27,7 @@ dreams for the world. It hasn’t defined what it is yet, but people are idolizi
 changed.
 
 So, what is bitcoin? Lets look at [bitcoin.org’s FAQ](https://bitcoin.org/en/faq#what-is-bitcoin) for the definition.
+
 > Bitcoin is a consensus network that enables a new payment system and a completely digital money. It is the first decentralized peer-to-peer payment network that is 
 powered by its users with no central authority or middlemen. From a user perspective, Bitcoin is pretty much like cash for the Internet. Bitcoin can also be seen as the 
 most prominent triple entry bookkeeping system in existence.

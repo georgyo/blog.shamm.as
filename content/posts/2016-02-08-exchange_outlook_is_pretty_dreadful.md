@@ -3,7 +3,7 @@ layout: post
 title: "Exchange/Outlook is pretty dreadful."
 tagline: ""
 description: ""
-category: "productivity"
+categories: ["productivity"]
 date: "2016-02-08 8:49:05"
 tags: ["email", "outlook"]
 ---

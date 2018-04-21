@@ -3,10 +3,10 @@ layout: post
 title: "Two factor for SSH, revisited."
 tagline: ""
 description: ""
-category: "SSH"
-date: "2017-04-22 8:49:05"
-tags: ["SSH", "twofactor"]
-draft: true
+categories: ["security"]
+date: "2018-04-15 8:49:05"
+tags: ["SSH", "twofactor", "security"]
+draft: false
 ---
 
 # Two factor for SSH, revisited.

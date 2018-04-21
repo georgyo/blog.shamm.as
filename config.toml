@@ -1,8 +1,8 @@
 baseurl = "http://blog.shamm.as"
 languageCode = "en-us"
-Title = "Your site title"
+Title = "George Shammas"
 # Copyright notice. This is displayer in the footer.
-copyright = "&copy; Copyright notice"
+copyright = "&copy; 2018 All rights reserved"
 theme = "potato-dark"
 
 [params]
@@ -26,7 +26,7 @@ theme = "potato-dark"
   # youtube = "Your YouTube username"
   linkedin = "georgeshammas"
   # Disqus shortname
-  # disqus = ""
+  disqus = "shammas"
   # Google Analytics API key.
   # ga_api_key = "Your Google Analytics tracking id"
   # Logo image. This is displayed ogp image.
@@ -56,7 +56,7 @@ theme = "potato-dark"
   includeNewer = false
 
   # Will lower case keywords in both queries and in the indexes.
-  toLower = false
+  toLower = true
 
   [[related.indices]]
   name = "keywords"
