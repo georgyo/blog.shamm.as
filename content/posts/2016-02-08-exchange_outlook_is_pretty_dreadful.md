@@ -1,12 +1,12 @@
----
-layout: post
-title: "Exchange/Outlook is pretty dreadful."
-tagline: ""
-description: ""
-categories: ["productivity"]
-date: "2016-02-08 8:49:05"
-tags: ["email", "outlook"]
----
++++
+layout = "post"
+title = "Exchange/Outlook is pretty dreadful."
+tagline = ""
+description = ""
+categories = ["productivity"]
+date = 2016-02-08
+tags = ["email", "outlook"]
++++
 
 I recently started at a company that uses exchange for email, and enforces that you use the exchange connectors. This means no IMAP or POP; only MAPI and EWS. I have 
 tried giving it a fair shot that past few months, but I am fairly frustrated. It’s actually not entirely outlook’s fault, but its a large part.

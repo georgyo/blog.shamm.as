@@ -1,12 +1,12 @@
----
-layout: post
-title: "Bitcoin will never be what people want it to be"
-tagline: "The Bad Parts"
-description: ""
-categories: []
-date: "2016-01-16 8:49:05"
-tags: ["bitcoin", "cryptocurrencies"]
----
++++
+layout = "post"
+title = "Bitcoin will never be what people want it to be"
+tagline = "The Bad Parts"
+description = ""
+categories = []
+date = 2016-01-16
+tags = ["bitcoin", "cryptocurrencies"]
++++
 
 
 If you ask 10 different people what bitcoin is, you will get at least 10 different answers. I say at least 10, because many people have several different answers. For 

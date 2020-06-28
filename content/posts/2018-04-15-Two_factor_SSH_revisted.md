@@ -1,13 +1,12 @@
----
-layout: post
-title: "Two factor for SSH, revisited."
-tagline: ""
-description: ""
-categories: ["security"]
-date: "2018-04-15 8:49:05"
-tags: ["SSH", "twofactor", "security"]
-draft: false
----
++++
+layout = "post"
+title = "Exchange/Outlook is pretty dreadful."
+tagline = ""
+description = ""
+categories = ["productivity"]
+date = 2016-02-08
+tags = ["email", "outlook"]
++++
 
 # Two factor for SSH, revisited.
 
