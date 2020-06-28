@@ -1,4 +1,4 @@
-baseurl = "http://blog.shamm.as"
+baseurl = "https://blog.shamm.as"
 languageCode = "en-us"
 Title = "George Shammas"
 # Copyright notice. This is displayer in the footer.
@@ -42,11 +42,6 @@ theme = "ananke"
     name = "About"
     url = "/about"
     weight = 2
-
-[[menu.main]]
-    identifier = "theme"
-    name = "Theme"
-    weight = 3
 
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
