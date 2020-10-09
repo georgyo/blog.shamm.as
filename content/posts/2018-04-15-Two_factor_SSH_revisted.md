@@ -1,14 +1,12 @@
 +++
 layout = "post"
-title = "Exchange/Outlook is pretty dreadful."
+title = "Two factor for SSH, revisited"
 tagline = ""
 description = ""
-categories = ["productivity"]
-date = 2016-02-08
-tags = ["email", "outlook"]
+categories = ["security"]
+date = 2018-04-15
+tags = ["SSH", "security", "twofactor"]
 +++
-
-# Two factor for SSH, revisited.
 
 There are a great many guides that are using google authentication as a two factor source for SSH, and this is fine for one off servers where you are the one and only
 admin of that server. However there are several problems for a multi-server and/or multi-user environments. Let’s review these problems, getting a better understanding
