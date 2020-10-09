@@ -1,4 +1,5 @@
-baseurl = "https://blog.shamm.as"
+#baseurl = "https://blog.shamm.as"
+baseurl = ""
 languageCode = "en-us"
 Title = "George Shammas"
 # Copyright notice. This is displayer in the footer.
@@ -9,12 +10,12 @@ theme = "ananke"
   paginate = 10
   # Social accounts. Link to these accounts are displayed in the header and
   # footer
-  twitter = "georgyo"
-  facebook = "shammas"
-  instagram = "ge0rgy0"
+  twitter = "https://twitter.com/georgyo"
+  facebook = "https://facebook.com/shammas"
+  instagram = "https://www.instagram.com/ge0rgy0/"
   # googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
-  github = "georgyo"
-  gitlab = "georgyo"
+  github = "https://github.com/georgyo"
+  gitlab = "https://gitlab.com/georgyo"
   # npm = "Your npm username"
   # codepen = "Your CodePen username"
   # dribbble = "Your Dribbble username"
