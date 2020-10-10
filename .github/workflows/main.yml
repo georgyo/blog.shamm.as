@@ -20,7 +20,10 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
+      with:
+        lfs: true
+    - name: Checkout LFS objects
+      run: git lfs checkout
     - name: Hugo Actions
       uses: srt32/hugo-action@v0.0.3
 
