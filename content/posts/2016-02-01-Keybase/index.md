@@ -18,23 +18,23 @@ The problems with keybase is that it choose to be a central and singular provide
 Not because their methods would prevent that, but because they choose to be loners doing their own thing. It makes me unbelievably sad, that people use it and talk
 about it as a good thing. Lets break down the places where it fails.
 
-Keybase is a business. The most important thing to realize is that keybase is a startup. It’s core codebase is proprietary, there is no federation, and is incompatable
+Keybase is a business. The most important thing to realize is that keybase is a startup. It’s core codebase is proprietary, there is no federation, and is incompatible
 with everything that has come before it. The end game for keybase is the same as every startup. Get bought, shutdown, or work to become profitable. Two of those are
 actually almost the same outcome for the user, in which the user becomes the product.
 
 If it becomes the defacto standard, keybase becomes the authority on authority. Since a large portion of their users will be storing their private key with them, when
-they get subpoenaed, they can hand over that (encrypted) private key with ease. The encrpytion on the private key is not a new problem for authorities, who have focused
-much effort on brute forcing those semetric ciphers. Oh, and a sucesfull XSS attack or MITM with a bit of javascript can surender the entire key.
+they get subpoenaed, they can hand over that (encrypted) private key with ease. The encryption on the private key is not a new problem for authorities, who have focused
+much effort on brute forcing those symmetric ciphers. Oh, and a successful XSS attack or MITM with a bit of javascript can surrender the entire key.
 
 OpenPGP already happens to have a way to ensure a key belong to the person who they say it belongs to using a [web of trust](http://en.wikipedia.org/wiki/Web_of_trust).
 The web of trust only works the more people use it, and only if they follow it religiously. You can however sign a key saying you have not done much effort to ensure
 the key belongs to who you say it belongs to. These key signatures would still help non-keybase users to verify if a key is valid. When you follow (track) a user in
 keybase, you use your private key to sign a message saying that you are tracking them. You do not however actually sign their key at all. This is just plain dumb, so
-close but they perfer to be their own island.
+close but they prefer to be their own island.
 
 Keeping on that island, when you prove that you own an social media account, that could easily be encoded in the public key directly. This would make a public key be
 enough to validate itself using its own metadata. Keybase again choose to be an island, they store all the proof links in their database, and require API calls to
-retrieve. If they go ofline, you cannot access the proof status, and cannot validate the the proofs yourself because they are all stored on the island of keybase.
+retrieve. If they go offline, you cannot access the proof status, and cannot validate the the proofs yourself because they are all stored on the island of keybase.
 
 When a normal user goes to keybase, they can choose to create a key completely in their browser. This is a pretty useful for usability, but the key created will have an
 identifier of “keybase/username” instead of the user’s email address. This is because you can change your email address in keybase, but you can’t change your username.

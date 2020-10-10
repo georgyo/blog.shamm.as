@@ -19,7 +19,7 @@ individuals is not getting a secrete key to the other person, but ensuring the k
 some other third party sitting in-between the separation. I have not seen a solution that is both decent and usable; including services like keybase. The key
 distribution problem is hard to solve correctly, and I am not going to attempt to solve it today.
 
-A regular use case for PGP is Alice wants to send Bob a message that no one else can see. Alice ask’s Bob if he uses PGP, bob says no. Alice then spend’s 30 minutes
+A regular use case for PGP is Alice wants to send Bob a message that no one else can see. Alice asks Bob if he uses PGP, bob says no. Alice then spends 30 minutes
 convincing Bob that PGP is good, and another two days teaching Bob how to use GnuPG. After much frustration, the original encrypted message is sent and decoded
 successfully. WOOT! Bob never uses PGP again, and Alice wants an easier way.
 

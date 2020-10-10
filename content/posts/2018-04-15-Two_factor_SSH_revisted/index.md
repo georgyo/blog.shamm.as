@@ -42,8 +42,7 @@ person has your phone, they have access. If you only use your finger print, and 
 The idea is that each of these present different challenges to the attacker. They may be able to get your password through phishing but they couldn’t use the same
 technique to read your phone. You have just doubled their problem space! This is good for you, and bad for them.
 
-A common mistake is using two of the same types of factors and thinking this make you secure. While this might add some complexity to targeting you, history has shown
-that having two passwords are both targetable with phishing.
+A common mistake is using two of the same types of factors and thinking this make you secure. While this might add some complexity to targeting you, history has shown that having two passwords are both targetable with phishing.
 
 TK: Give an examples.
 
