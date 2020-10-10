@@ -1,5 +1,5 @@
 #baseurl = "https://blog.shamm.as"
-baseurl = ""
+baseurl = "/"
 languageCode = "en-us"
 Title = "George Shammas"
 # Copyright notice. This is displayer in the footer.
@@ -33,6 +33,10 @@ theme = "ananke"
   # Logo image. This is displayed ogp image.
   logo = "/path/to/logo"
   favicon = "/path/to/favicon"
+
+  background_color_class = "bg-black"
+  featured_image = "/images/2020-07-04_fireworks_header.jpg"
+  recent_posts_number = 2
 
 [[menu.main]]
     name = "Blog"
