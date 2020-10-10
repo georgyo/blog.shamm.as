@@ -6,19 +6,17 @@ description = ""
 categories = [""]
 date = 2020-10-09
 tags = ["ifconfig.io", "microservices"]
-draft = false
+draft = true
 +++
 
 It recently came to my attention that [Cloudflare Radar][7] exists. With that tool you can look up the global ranking of any domain. They don't seem to specify how they are tracking this data, but they have stats even for domains such as google.com which does not use cloudflare. With this tool, I discovered that my silly what is your IP address service is in the [top 500 domains][6] **in the world!** As such it is time to talk about how it runs!
 
 I created [ifconfig.io][0] about 6 years ago, and over the years it has needed almost zero scalling. At it's peak it was getting ~980 million requests per day, and currently is about ~540 million a day. That equates to about 5-9k requests per second, with an all time peak of 14krps. That is enough requests that can make even the simplest service stuggle. This service costs $80 a month to run. Running what is basically an echo service isn't that interesting, but anything at scale often is.
 
-The techstack is CloudFlare -> Linode VM (ArchLinux) -> [Go Code][1]. This was the original as well as the current architecture, and is very [KISS][8]. There are no reverse proxies, caching layers, containers, or anything else to complicate this. Adding any of those would cause the linux tech stack to start duplicating either the network or connections and each one would be a multiplier of the requirements required. Everytime I think about make changes I realize how expensive modern popular solutions are.
+The techstack is CloudFlare -> Linode VM (Archlinux) -> [Go Code][1]. This was the original as well as the current architecture, and is very [KISS][8]. There are no reverse proxies, caching layers, containers, or anything else to complicate this. Adding any of those would cause the linux tech stack to start duplicating either the network or connections and each one would be a multiplier of the requirements required. Everytime I think about make changes I realize how expensive modern popular solutions are.
 
 
-## Changes in architecture 
-
-### Bandwidth ###
+## Bandwidth ##
 ![Total Bandwidth in September into October][3]
 The server running [ifconfig.io][0] pushes about 5-7TB of traffic a month. The graph above shows twice that, but that is either because Cloudflare counts both egress and ingress traffic or some other cloudflare accounting. The graph does show that traffic is pretty consistent thoughout the day, it ranges 20-40Mbit/s at any given moment. If I wanted to change cloud providers, here is how much 7TB of egress costs.
 
@@ -33,7 +31,7 @@ With Linode each VM is comes some included network transfer. The [$80 linode][li
 It completely baffels me that anyone pays the big three cloud providers for bandwidth. The price for that little bit of bandwdith could get me a full 42U rack, power, and a 1Gbit commit from [Hurricane Electric][hecolo], and still have money left over to buy some hardware to run the service. Granted it isn't a cloud provider.
 
 
-### Serverless (tm) ###
+## Serverless (tm) ##
 ![Total Requests in September into August][2]
 Sometimes I debate on making this "serverless." It is indeed a good use case as it could reduce load times in other areas. [ifconfig.io][0] currently gets 16 billion requests per month. This means that in addition to the bandwidth costs above, serverless would bankrupt me very quickly.
 
@@ -44,10 +42,6 @@ Sometimes I debate on making this "serverless." It is indeed a good use case as 
 * [Cloudflare Workers][cfworkerpricing] would be $8,000/month!
 
 I am basing this on 16 billion requests per month that I am currently getting, however these numbers are not including bandwidth costs. These costs are in addition to the bandwidth costs above.
-
-
-![Unique Visitors in September into August][4]
-
 
 
 
