@@ -9,6 +9,8 @@
     { self, nixpkgs }:
     {
 
+      overlay = final: prev: { blog_shamm_as = final.callPackage ./. { blog_src = self; }; };
+
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
 
       packages.x86_64-linux.blog_shamm_as = nixpkgs.legacyPackages.x86_64-linux.callPackage ./. {
