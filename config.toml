@@ -25,7 +25,7 @@ theme = "ananke"
   # tumblr = "Your Tumblr username"
   # vimeo = "Your Vimeo username"
   # youtube = "Your YouTube username"
-  linkedin = "georgeshammas"
+  linkedin = "https://www.linkedin.com/in/georgeshammas/"
   # Disqus shortname
   disqus = "shammas"
   # Google Analytics API key.
