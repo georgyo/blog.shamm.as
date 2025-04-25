@@ -5,80 +5,50 @@
 
 The intent of this theme is to provide a solid starting place for Hugo sites with basic features and include best practices for performance, accessibility, and rapid development.
 
-![screenshot](https://raw.githubusercontent.com/budparr/gohugo-theme-ananke/master/images/screenshot.png)
+![screenshot](images/screenshot.png)
 
 [DEMO](https://ananke-theme.netlify.app/)
 
 Features
 
-- Responsive
-- Accessible
-- Contact form
-- Custom Robots.txt (changes values based on environment)
-- Internal templates for meta data, google analytics, and DISQUS or COMMENTO comments
-- RSS Discovery
-- Table of Contents (must declare `toc: true` in post parameter)
-- Stackbit configuration ([Stackbit](https://www.stackbit.com))
+* Responsive
+* Accessible
+* Contact form
+* Custom Robots.txt (changes values based on environment)
+* Internal templates for meta data, google analytics, and DISQUS or COMMENTO comments
+* RSS Discovery
+* Table of Contents (must declare `toc: true` in post parameter)
+* Stackbit configuration ([Stackbit](https://www.stackbit.com))
 
 Also includes examples of Hugo Features or Functions:
 
-- Pagination (internal template)
-- Taxonomies
-- Archetypes
-- Custom shortcode
-- Related content
-- Hugo built-in menu
-- i18n
-- `with`
-- `first`
-- `after`
-- `sort`
-- Site LanguageCode
-- `where`
-- Content Views
-- Partials
-- Template layouts (type "post" uses a special list template, single template, and a content view)
-- Tags
-- `len`
-- Conditionals
-- `ge` (greater than or equal to)
-- `.Site.Params.mainSections` to avoid hard-coding "blog," etc. [[release note](https://github.com/gohugoio/hugo/blob/66ec6305f6cb450ddf9c489854146bac02f7dca1/docs/content/meta/release-notes.md#enhancements)]
+* Pagination (internal template)
+* Taxonomies
+* Archetypes
+* Custom shortcode
+* Related content
+* Hugo built-in menu
+* i18n
+* `with`
+* `first`
+* `after`
+* `sort`
+* Site LanguageCode
+* `where`
+* Content Views
+* Partials
+* Template layouts (type "post" uses a special list template, single template, and a content view)
+* Tags
+* `len`
+* Conditionals
+* `ge` (greater than or equal to)
+* `.Site.Params.mainSections` to avoid hard-coding "blog," etc. [[release note](https://github.com/gohugoio/hugo/blob/66ec6305f6cb450ddf9c489854146bac02f7dca1/docs/content/meta/release-notes.md#enhancements)]
 
-This theme uses the "Tachyons" CSS library. This will allow you to manipulate the design of the theme by changing class names in HTML without touching the original CSS files. For more information see the [Tachyons website](https://tachyons.io/).
+This theme uses the [Tachyons CSS library](https://tachyons.io/). This will allow you to manipulate the design of the theme by changing class names in HTML without touching the original CSS files.
 
 ## Installation
 
-### As a Hugo Module (recommended)
-
-> ⚠️ If you installed a [Hugo binary](https://gohugo.io/getting-started/installing/#binary-cross-platform), you may not have Go installed on your machine. To check if Go is installed:
->
-> ```bash
-> go version
-> ```
->
-> Go modules were considered production ready in v1.14. [Download Go](https://golang.org/dl/).
-
-1. From your project's root directory, initiate the hugo module system if you haven't already:
-
-   ```bash
-   hugo mod init github.com/<your_user>/<your_project>
-   ```
-
-2. Add the theme's repo to your `config.toml`:
-
-   ```toml
-   theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
-   ```
-
-### As Git Submodule
-
-Inside the folder of your Hugo site run:
-
-```bash
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-```
-
-For more information read the official [setup guide](//gohugo.io/getting-started/quick-start/) of Hugo.
+Dive into our [documentation on installing the theme as GoHugo Module or Git Submodule](https://github.com/theNewDynamic/gohugo-theme-ananke/wiki/Installation). [The official setup guide](https://gohugo.io/getting-started/quick-start/) of GoHugo covers the installation of the theme as Git Submodule.
 
 ## Getting started
 
@@ -92,14 +62,14 @@ Take a look inside the [`exampleSite`](https://github.com/theNewDynamic/gohugo-t
 
 To enable comments, add following to your config file:
 
-- DISQUS:
+* DISQUS:
 
   ```toml
   [services.disqus]
     shortname = 'YOURSHORTNAME'
   ```
 
-- COMMENTO:
+* COMMENTO:
 
   ```toml
   [params]
@@ -165,9 +135,9 @@ Using front matter and cascade, this can be customized for a whole section, or j
   read_more_copy: Read more about this bridge
 ```
 
-### Social Follow + Share
+### Social Media Follow + Share
 
-Read the documentation for [social follow](https://github.com/theNewDynamic/gohugo-theme-ananke/wiki/Social-media-network-setup#configure-social-media-follow-links) and [social share](https://github.com/theNewDynamic/gohugo-theme-ananke/wiki/Social-media-network-setup#configure-social-media-share-links) in our wiki.
+Read the documentation for [social media follow](https://github.com/theNewDynamic/gohugo-theme-ananke/wiki/Social-media-network-setup#configure-social-media-follow-links) and [social share](https://github.com/theNewDynamic/gohugo-theme-ananke/wiki/Social-media-network-setup#configure-social-media-share-links) in our wiki.
 
 > This project uses Font Awesome brand icons, which are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt). For more information, visit [Font Awesome](https://fontawesome.com/).
 
@@ -224,7 +194,7 @@ custom_css = ["custom.css","special.css"]
 
 __IMPORTANT__: Files registered through the `custom_css` array, while unlimited in number, must be of the same type (Ex: all `scss` or all `css`)
 
-__Note on retrocompatibiliy for custom css__: If the files registered through the `custom_css` setting are not found in `assets/ananke/css` the theme will expect them to live at the given path relative to the static directory and load them as <link> requests.
+__Note on retrocompatibiliy for custom css__: If the files registered through the `custom_css` setting are not found in `assets/ananke/css` the theme will expect them to live at the given path relative to the static directory and load them as `<link>` requests.
 
 ### Show Reading Time and Word Count
 
@@ -293,6 +263,6 @@ Now enter [`localhost:1313`](http://localhost:1313/) in the address bar of your 
 
 ## Contributing
 
-If you find a bug or have an idea for a feature, feel free to use the [issue tracker](https://github.com/theNewDynamic/gohugo-theme-ananke/issues) to let me know.
+If you find a bug feel free to use the [issue tracker](https://github.com/theNewDynamic/gohugo-theme-ananke/issues) to let me know. If you are having issues setting up your site with the theme, or have an idea for a feature, please use the [discussions](https://github.com/theNewDynamic/gohugo-theme-ananke/discussion) for support.
 
 Join me on my [ananke-theme Discord channel](https://discord.gg/MykHvyU5P3) for direct support.
